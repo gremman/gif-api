@@ -1,0 +1,74 @@
+body {
+    background-image: url("images/picnic.jpg");
+}
+
+h1 {
+    /* font-family: 'Fascinate Inline', cursive;
+    /* font-family: 'Diplomata', cursive; */ 
+    font-family: 'Monoton', cursive;
+    font-size: 54px;
+    color: rgb(241, 241, 127);
+    text-align: center;
+    border-bottom: 3px solid gainsboro;
+}
+
+#food-input {
+    border: 2px solid rgb(255, 255, 155); 
+    font-size: 16px;
+}
+
+#add-food {
+    border: 1px solid rgba(255, 0, 0, 0.568); 
+    background-color: rgb(255, 255, 155);
+    color: rgb(121, 14, 14);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.food {
+    border: 1px solid rgb(255, 255, 155); 
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#food-form {
+    color: white;
+    font-family: 'Mali', cursive;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#location {
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    color: rgb(241, 241, 127);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.style-gif {
+    float: left;
+    padding: 10px;
+  }
+
+  button,
+  input[type="submit"] {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    color: blue;
+    background: lightgreen;
+    border: 1px solid rgb(255, 255, 155); 
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover {
+    background: orange;
+  }
+  
+  button.active {
+    background: rgb(245, 221, 10);
+  }
