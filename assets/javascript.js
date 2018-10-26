@@ -19,7 +19,8 @@ function renderButtons() {
 
 // Add content to buttons by pulling from array"
   function addContent(arrayToUse, classToAdd, areaToAddTo) {
-
+    $(areaToAddTo).empty();
+    
     for (var i = 0; i < arrayToUse.length; i++) {
       var a = $("<button>");
       a.addClass(classToAdd);
@@ -93,8 +94,19 @@ $(document).on("click", ".food-image", function () {
   }
 });
 
-  addContent(foods, "food-button", "#view-buttons");
+// Need to add button (push) after pick new place
+$("#add-food").on("click", function(event) {
+  event.preventDefault();
+  var newFood = $("input").eq(0).val();
 
+  if (newFood.length > 2) {
+    foods.push(newFood);
+  }
+  addContent(foods, "food-button", "#view-buttons");
+  renderButtons();
+});
+
+  addContent(foods, "food-button", "#view-buttons");
   renderButtons();
 });
 
